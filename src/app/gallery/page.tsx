@@ -21,9 +21,9 @@ export default function GalleryPage() {
 Gallery
         </h1>
           <div className="grid grid-cols-3 gap-4">
-            <GalleryImage src="/earth.png" name="earth.png" hash="0xabc123" />
-            <GalleryImage src="/elysium.png" name="elysium.png" hash="0xabc123" />
-            <GalleryImage src="/pool.jpg" name="pool.jpg" hash="0xabc123" />
+            <GalleryImage src="/earth.png" name="earth.png" hash="be886a97...3cb26e9e" />
+            <GalleryImage src="/elysium.png" name="elysium.png" hash="14eb719d...752e14a7" />
+            <GalleryImage src="/pool.jpg" name="pool.jpg" hash="968e5c63...2c2bfdd0" />
           </div>
         </>
           )}
@@ -33,12 +33,12 @@ Gallery
 
 function GalleryImage({src, name, hash}: {src: string, name: string, hash: string}) {
   return (
-    <div className="flex flex-col bg-yellow-100 p-4 rounded-xl">
+    <div className="flex flex-col bg-yellow-100 gap-2 p-4 rounded-xl">
       <Image src={src} alt={name} width={300} height={300} className="rounded-3xl object-cover h-64 w-64" />
-      <span className="text-2xl font-extrabold tracking-tight text-red-400">
+      <span className="text-2xl font-semibold tracking-tight text-red-800">
         {name}
       </span>
-      <span className="text-2xl font-extrabold tracking-tight text-red-400">
+      <span className="text-xl font-mono tracking-tight text-red-800">
         {hash}
       </span>
     </div>

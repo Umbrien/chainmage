@@ -26,7 +26,7 @@ export default function RootLayout({
         <Link href="/">
         <span className="font-medium">chainmage</span>
         </Link>
-        <span className="font-mono">0xdc2d01862051e143e07f5caa3efd67696bed134bac19f883cf14592f5681e194</span>
+        <span className="font-mono">0xdc2d01762051e143e08f5caa3efd67696bed134bac19f883cf14592f5681e194</span>
       </header>
       {children}
       </body>
